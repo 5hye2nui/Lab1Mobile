@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/standard_margin"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageViewAvatar"
+        android:layout_width="@dimen/logo_size"
+        android:layout_height="@dimen/logo_size"
+        android:src="@drawable/android_logo"
+        android:contentDescription="@string/avatar_description"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayoutInfo"
+        android:layout_marginEnd="@dimen/large_margin"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAvatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_vertical|start">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="@dimen/font_name"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/small_margin"/>
+
+        <TextView
+            android:id="@+id/textViewGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/group"
+            android:textSize="@dimen/font_group"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="@dimen/large_margin"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/small_margin">
+
+            <ImageView
+                android:id="@+id/imageViewEmailIcon"
+                android:layout_width="@dimen/email_logo"
+                android:layout_height="@dimen/email_logo"
+                android:src="@drawable/ic_email"
+                android:contentDescription="@null"
+                android:layout_marginEnd="@dimen/small_margin"/>
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email"
+                android:textSize="@dimen/font_contact"
+                android:textColor="@color/text"
+                android:autoLink="email"
+                android:linksClickable="true"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

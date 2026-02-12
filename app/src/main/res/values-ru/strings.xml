@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Визитка</string>
+    <string name="name">Усас Вероника</string>
+    <string name="group">Б23-191-3</string>
+    <string name="email">veronika_kochurova@mail.ru</string>
+    <string name="avatar_description">Логотип Android</string>
+</resources>

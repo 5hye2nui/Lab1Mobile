@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="standard_margin">20dp</dimen>
+    <dimen name="small_margin">8dp</dimen>
+    <dimen name="large_margin">80dp</dimen>
+    <dimen name="logo_size">300dp</dimen>
+    <dimen name="email_logo">20dp</dimen>
+    <dimen name="font_name">32sp</dimen>
+    <dimen name="font_group">18sp</dimen>
+    <dimen name="font_contact">14sp</dimen>
+</resources>
